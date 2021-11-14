@@ -6,7 +6,7 @@ presented in the thesis
 - Python packages: numpy, matplotlib, pandas
 
 ### Usage: 
-The script `Setup.py` contains all the parameters and can be seen as `main.cpp`.
+The script `setup.py` contains all the parameters and can be seen as `main.cpp`.
 Some parameters (geometry, output options etc..) have to be set explicitly in the script, while some
 other parameters can be passed via terminal. These are:
 
