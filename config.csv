@@ -1,2 +1,2 @@
 ,H,L,benchmark,nu,dp,u_b,structured,hmax,order,condense,constitutive,threads,solver,it_max,tol_min,switch,tol_switch,damp_fix,damp_newton,printrates,linesearch,inverse,model,r,tau_y,kappa,law,draw_ngsolve,draw_matplotlib,resolution_plot,write_output,print_info,vtk_output
-options,2,1,unit,1.0,-2.0,1.0,False,0.1,2,True,False,4,newton,200,1e-08,False,0.0001,1.0,1.0,True,none,pardiso,Bingham,1.4,1.0,0.0001,G1,True,True,501,False,False,False
+options,1,1,unit,1e-06,-2.0,1.0,False,0.01,2,True,False,4,newton,200,1e-08,False,0.0001,1.0,1.0,True,none,pardiso,Powerlaw,1.4,1.0,1e-08,G1,True,False,501,False,False,False

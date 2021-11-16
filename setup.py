@@ -8,12 +8,12 @@ import numpy as np
 import pandas as pd
 
 options = { #Geometry
-            "H"          : 2,                       #Channel Height for periodic and square
+            "H"          : 1,                       #Channel Height for periodic and square
             "L"          : 1,                       #Channel Length for periodic and square
             "benchmark"  : "unit",                  #Select periodic, cavity, cylinder or unit
 
             #Flow properties
-            "nu"     : 1.0,                         #Kinematic viscosity
+            "nu"     : 1e-6,                         #Kinematic viscosity
             "dp"     : -2.0,                        #Pressure drop for periodic benchmark
             "u_b"    : 1.0,                         #Boundary velocity
 
@@ -48,7 +48,7 @@ options = { #Geometry
 
             #Output options
             "draw_ngsolve"    : True,              #Draw netgen solution
-            "draw_matplotlib" : True,              #Draw velocity profile matplotlib
+            "draw_matplotlib" : False,              #Draw velocity profile matplotlib
             "resolution_plot" : 501,                #Resolution Channelheight
             "write_output"    : False,               #Write output to file
             "print_info"      : False,              #Print to terminal simulation info

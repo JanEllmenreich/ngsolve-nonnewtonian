@@ -46,6 +46,9 @@ class Spaces:
             Q = L2(mesh,order=order-1)
             V = Periodic(VectorH1(mesh,order=order,dirichlet="wall|boundary"))
             S = L2(mesh,order=order-1)**2
+            if options["condense"]:
+                Q.SetCouplingType(ngstd.IntRange(0,Q.ndof),COUPLING_TYPE.WIREBASKET_DOF)
+                Q.FinalizeUpdate()
             X = V*Q*S
             return X
 
